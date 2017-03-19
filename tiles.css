@@ -1,0 +1,60 @@
+.tile {
+	visibility: hidden;
+}
+
+.tile a {
+	text-decoration: none;
+	color: white;
+	text-shadow: 2px 2px 5px rgba(35, 35, 35, 0.44);
+}
+
+.tile img {
+	border: solid;
+	border-width: 2px;
+	border-color: grey;
+	border-radius: 10px;
+	width: 100%;
+}
+
+.tile a:hover img {
+	border-color: black;
+	box-shadow: 0 1px 8px black;
+}
+
+.tile-description {
+	text-align: center;
+	margin-top: -19em;
+	margin-bottom: 13em;
+	width: 100%;
+	color: white;
+}
+
+.tile h1{
+	font-size: 70px;
+	text-align: center;
+	-webkit-transition: 0.5s;
+	opacity: 0;
+}
+
+.tile a:hover h1{
+	opacity: 1;
+}
+
+
+.tile p{
+	font-size: 20px;
+	text-align: center;
+	opacity: 0;
+	-webkit-transition: 0.5s;
+}
+
+.tile a:hover p{
+	opacity: 1;
+}
+
+
+/*------------------------------------*/
+
+.small-tile {
+
+}
