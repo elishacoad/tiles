@@ -32,9 +32,4 @@ Find an example of this library in use here at [Elisha Coad's website](http://el
 - Creat Colored Tiles
 - Center Long titles
 
-<<<<<<< HEAD
 (if you find any other feature that would be cool, feel free to add the list!)
-=======
-## License
-In Progress....
->>>>>>> origin/master
