@@ -1,60 +1,79 @@
+/*-----------------------------------------------------------------------
+___________________
+        |                |
+        |        .       |
+        |                |       ________       _________
+        |        |       |      |        |     |
+        |        |       |      |________|     |_________
+        |        |       |      |                        |
+        |        |       |      |________       _________|
+-----------------------------------------------------------------------*/
+
 .tile {
-	visibility: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    cursor: default;
+    /*So the cursor won't change to text select cursor on hovering of words*/
+    color: white;
+    background-color: black;
+    /*Allows the img to darken by lowering it's opacity*/
+    border-radius: 10px;
 }
 
 .tile a {
-	text-decoration: none;
-	color: white;
-	text-shadow: 2px 2px 5px rgba(35, 35, 35, 0.44);
+    text-decoration: none !important;
 }
 
-.tile img {
-	border: solid;
-	border-width: 2px;
-	border-color: grey;
-	border-radius: 10px;
-	width: 100%;
+.tile img, .tile a img {
+    text-decoration: none;
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 100%;
 }
 
-.tile a:hover img {
-	border-color: black;
-	box-shadow: 0 1px 8px black;
+.tile:hover img {
+    border-color: black;
+    opacity: 0.4;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -webkit-box-shadow: 7px 7px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 8px 0px rgba(0,0,0,0.75);
 }
 
 .tile-description {
-	text-align: center;
-	margin-top: -19em;
-	margin-bottom: 13em;
-	width: 100%;
-	color: white;
+    left: 50%;
+    margin-right: -50%;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 35px;
 }
 
-.tile h1{
-	font-size: 70px;
-	text-align: center;
-	-webkit-transition: 0.5s;
-	opacity: 0;
+.tile h1 {
+    font-size: 70px;
+    text-align: center;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    opacity: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
-.tile a:hover h1{
-	opacity: 1;
+.tile:hover h1 {
+    opacity: 1;
 }
 
-
-.tile p{
-	font-size: 20px;
-	text-align: center;
-	opacity: 0;
-	-webkit-transition: 0.5s;
+.tile p {
+    font-size: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
-.tile a:hover p{
-	opacity: 1;
-}
-
-
-/*------------------------------------*/
-
-.small-tile {
-
+.tile:hover p {
+    opacity: 1;
 }
