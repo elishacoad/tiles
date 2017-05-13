@@ -33,5 +33,6 @@ I was building my website, and wanted to add tiles as my main interface. I searc
 - Include Prototype Pics (with it's dimensions included)
 - Creat Colored Tiles
 - Center Long titles
+- Demo fails to load tiles.js
 
 (if you find any other feature that would be cool, feel free to add the list!)
